@@ -43,7 +43,7 @@ func handler(ctx context.Context, s3Event events.S3Event) (Response, error) {
 
 		ioutil.WriteFile(originalPath, buffer.Bytes(), 0644)
 
-		output, err := exec.Command("/bin/pgn-extract", originalPath, "--fencomments", "--output", processedPath).CombinedOutput()
+		output, err := exec.Command("/bin/pgn-extract", originalPath, "--fencomments", "--commentlines", "--output", processedPath).CombinedOutput()
 		fmt.Println(string(output))
 		if err != nil {
 			return response, err
