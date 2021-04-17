@@ -22,7 +22,6 @@ run-sandbox:
 push:
 	aws ecr get-login-password \
 	  --region ${AWS_REGION} \
-	  --profile ${AWS_PROFILE} \
 	| \
 	docker login \
 	  --username AWS \
