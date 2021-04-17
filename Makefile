@@ -15,6 +15,7 @@ build-sandbox:
 
 run-sandbox:
 	docker run \
+	  -e AWS_S3_BUCKET=${AWS_S3_BUCKET} \
 	  -p 9000:8080 \
 	  lambda-s3-pgn-sandbox
 
