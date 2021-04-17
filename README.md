@@ -5,7 +5,7 @@
 ### Architecture
 
 <p align="center">
-    <img width="883" height="149" src="docs/architecture.png" alt="Application architecture">
+    <img width="863 × 129" height="129" src="docs/architecture.png" alt="Application architecture">
 </p>
 
 ### Example
