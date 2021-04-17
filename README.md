@@ -31,7 +31,7 @@ Both build-time and run-time variables are stored in [default.config](default.co
 | --- | --- |
 | `AWS_ACCOUNT_ID` | Your AWS account ID is only required for pushing the final image to Amazon ECR |
 | `AWS_REGION` | Region of the evironment hosting the Lambda function |
-| `AWS_S3_BUCKET` | Name of the S3 bucket to upload processed PGN databases to |
+| `AWS_S3_BUCKET` | Name of the S3 bucket to upload processed PGN databases to when running the sandbox |
 | `PGN_EXTRACT_DOWNLOAD_URL` | Download URL of the zipped source code of the targeted version of [pgn-extract](https://www.cs.kent.ac.uk/people/staff/djb/pgn-extract/) |
 
 ### Testing
