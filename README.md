@@ -40,7 +40,7 @@ You can run the function locally by building and running the sandbox image which
 make build-sandbox
 ```
 
-Running the sandbox image will expose the emulated Lambda environment on http://localhost:9000/2015-03-31/functions/function/invocations.
+Running the sandbox image exposes the emulated Lambda environment exposed on the endpoint http://localhost:9000/2015-03-31/functions/function/invocations waiting for [S3 event messages](https://docs.aws.amazon.com/AmazonS3/latest/userguide/notification-content-structure.html).
 ```
 make run-sandbox
 ```
