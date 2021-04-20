@@ -1,6 +1,6 @@
 ## Description
 
-Slim [Docker](https://www.docker.com/) container-based [AWS Lambda](https://aws.amazon.com/lambda/) function that processes [PGN chess databases](https://en.wikipedia.org/wiki/Portable_Game_Notation) stored on [Amazon S3](https://aws.amazon.com/s3/) using and enriches them with [Forsyth–Edwards Notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) comments using the [pgn-extract](https://www.cs.kent.ac.uk/people/staff/djb/pgn-extract/) CLI tool.
+Slim [Docker](https://www.docker.com/) container-based [AWS Lambda](https://aws.amazon.com/lambda/) function that processes [PGN chess databases](https://en.wikipedia.org/wiki/Portable_Game_Notation) stored on [Amazon S3](https://aws.amazon.com/s3/) and enriches them with [Forsyth–Edwards Notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) comments using the [pgn-extract](https://www.cs.kent.ac.uk/people/staff/djb/pgn-extract/) CLI tool.
 
 ### Architecture
 
