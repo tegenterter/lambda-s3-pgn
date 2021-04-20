@@ -5,7 +5,7 @@ Slim [Docker](https://www.docker.com/) container-based [AWS Lambda](https://aws.
 ### Architecture
 
 <p align="center">
-    <img width="863 × 129" height="129" src="docs/architecture.png" alt="Application architecture">
+    <img width="863" height="129" src="docs/architecture.png" alt="Application architecture">
 </p>
 
 ### Example
@@ -29,10 +29,8 @@ Both build-time and run-time variables are stored in [default.config](default.co
 
 | Command | Description |
 | --- | --- |
-| `AWS_ACCOUNT_ID` | Your AWS account ID is only required for pushing the final image to Amazon ECR |
-| `AWS_REGION` | Region of the evironment hosting the Lambda function |
-| `AWS_S3_BUCKET` | Name of the S3 bucket to upload processed PGN databases to when running the sandbox |
 | `PGN_EXTRACT_DOWNLOAD_URL` | Download URL of the zipped source code of the targeted version of [pgn-extract](https://www.cs.kent.ac.uk/people/staff/djb/pgn-extract/) |
+| `AWS_S3_BUCKET` | Name of the S3 bucket to upload processed PGN databases to when running the sandbox |
 
 ### Testing
 
@@ -40,8 +38,10 @@ You can run the function locally by building and running the sandbox image which
 
 ```bash
 make build-sandbox
+```
 
-# Expose the emulated Lambda environment on http://localhost:9000/2015-03-31/functions/function/invocations
+Running the sandbox image will expose the emulated Lambda environment on http://localhost:9000/2015-03-31/functions/function/invocations.
+```
 make run-sandbox
 ```
 
@@ -49,7 +49,4 @@ make run-sandbox
 
 ```bash
 make build
-
-# Push the latest image to Amazon EC3
-make push
 ```
