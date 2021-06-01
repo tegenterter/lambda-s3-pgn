@@ -21,7 +21,7 @@ Single-game database example of processing using the [pgn-extract](https://www.c
 
 - [Docker](https://www.docker.com/)
 - [GNU make](https://www.gnu.org/software/make/)
-- [AWS CLI](https://aws.amazon.com/cli/) for running the sandbox locally and pushing the final image to [Amazon ECR](https://aws.amazon.com/ecr/)
+- [AWS CLI](https://aws.amazon.com/cli/) for running the sandbox locally
 
 ### Configuration
 
